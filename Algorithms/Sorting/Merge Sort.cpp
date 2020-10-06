@@ -109,7 +109,7 @@ int main()
     
 }
 
-
+//Divide and Conquer strategy - Recursive calls
 //Time complexity : Worst time complexity O(nlogn)
 //Array is constantly subdivided int equal halves and we make N comparisons in merge function
 //Space : requires extra space temporary array so O(n)
