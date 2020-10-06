@@ -64,7 +64,7 @@ int main()
 
     //dequeue
     dequeue(&head);
-    
+
     cout<<"Elements in queue after enqueue"<<endl;
     printqueue(head);
 
