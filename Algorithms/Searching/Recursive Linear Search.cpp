@@ -53,3 +53,6 @@ int main()
         cout<<"Element is not present in the array"<<endl;
     }
 }
+
+//Time complexity : O(n)
+//Space complexity : O(1)
