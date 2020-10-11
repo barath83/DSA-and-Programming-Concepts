@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//swap routine 
 void swap(int *a,int *b)
 {
     int t = *a;
@@ -10,18 +11,25 @@ void swap(int *a,int *b)
 
 void selectionSort(int a[],int n)
 {
+    //intializing the min index variable which will be the index for the smallest element in that iteration
     int min;
 
+    //iterate i from 0 to i less than n-1
     for(int i=0;i<n-1;i++)
     {
+        //for each iteration store i value in min
         min = i;
-
+        //iterate the inner loop with j variable from i+1'th index to j less than n
         for(int j=i+1;j<n;j++)
         {
+            //if the current element is less than the min index element
+            //replace min index value by current index value
             if(a[j]<a[min]){
                 min = j;
             }
         }
+        //swap min index element with current i index element
+        //so for each iteration the min element in array in unsorted array is moved to sorted array at the beginning
         swap(&a[min],&a[i]);
     }
 }
