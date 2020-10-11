@@ -1,3 +1,16 @@
+/*
+Exponential Search
+Algo: 
+- Find range where element is present
+- Do Binary Search in above found range.
+
+Exponential search is better than binary search for array with bounded values as it finds the range where binary search 
+can be done rather than applying binary search on whole array.
+
+Find the index range by multiplying i by 2 until we find a element greater than k and then use binary search on that range.
+
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -65,3 +78,6 @@ int main()
         cout<<"Element is not present in the array"<<endl;
     }
 }
+
+//Space complexity : O(1)
+//Time complexity : O(log n)
