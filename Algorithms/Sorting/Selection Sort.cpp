@@ -1,3 +1,17 @@
+/*
+Selection Sort
+
+Repeatedly finds the minimum element in unsorted array and moves it to the beginning of the array - the sorted part
+Such that this process repeats till the array is coverted from completely unsorted to sorted
+
+So at any point of time there are only two parts
+-Sub-array which is sorted 
+-Sub-array which is unsorted
+
+So ideally the inner loop identifies the minimum element in that iteration 
+and pushes it to the part of array which is sorted.
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -64,3 +78,6 @@ int main()
 
     cout<<endl;
 }
+
+// Space Complexity : O(1)
+// Time Complexity : Worst Case - O(n^2)
