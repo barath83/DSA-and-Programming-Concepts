@@ -1,3 +1,11 @@
+//Quick Sort is a in-place sorting algorithm, it follows divide and conquer approach
+//It follows the approach of identifying a pivot element and placing it in it's sorted position
+//such that elements less than pivot are on it's left side and the elements greater than are on right side
+//recursively array is called for excluding pivot in the upcoming iterations until the low pointer exceeds high pointer
+//Pivot can be the low or high index element can be the middle element or the median of array
+
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -83,3 +91,7 @@ int main()
 
     cout<<endl;
 }
+
+
+//Time Complexity : Worst case - O(n^2)  Avg & Best case - O(nlogn)
+//Space Complexity : O(N) 
