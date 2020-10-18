@@ -38,8 +38,10 @@ void deletewithkey(struct Node** head_ref,int key)
     }
 
     //if the key is not in list
-    if(curr==NULL)
+    if(curr==NULL){
+        cout<<"The key is not in this list"<<endl;
         return;
+    }
 
     //perform linking to remove current node 
     prev->next = curr->next;
@@ -125,3 +127,7 @@ int main()
     printList(head); 
     return 0; 
 }
+
+//deleteWithKey removes the node in the linked list which has the given key 
+//deletewithPosition removes the node in linked list in the given position
+//both require head pointers and traverse with current and previous node pointers
