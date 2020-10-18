@@ -43,6 +43,13 @@ void deletewithkey(struct Node** head_ref,int key)
         return;
     }
 
+    //if to be removed is the last node
+    if(curr->next==NULL){
+        prev->next = NULL;
+        free(curr);
+        return;
+    }
+
     //perform linking to remove current node 
     prev->next = curr->next;
 
