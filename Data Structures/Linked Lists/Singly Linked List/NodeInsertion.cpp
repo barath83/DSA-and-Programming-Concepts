@@ -62,10 +62,10 @@ void insert(Node *previous,int newdata)
     //assign value to node
     newnode->data = newdata;
 
-    //point newnode's next to the node to which the previous's next points to
+    //point newnode's next to the node to which the previous next points to
     newnode->next = previous->next;
 
-    //point previous's next to newnode to complete insertion
+    //point previous next to newnode to complete insertion
     previous->next = newnode;
 }
 
@@ -89,7 +89,20 @@ int main()
     push(&head,1);
 
     //adding node using insertion after 1 before 3
-    insert(head->next,2);
+    insert(head,2);
   
     printlist(head); 
 }
+
+//Output : 1 2 3 4
+
+//By Append operation 3 and 4 will be appended one after another to the list so it will be 3 followed by 4
+//List Currently : 3 --> 4
+
+//By Push operation 1 will be pushed at the front of the list before 3 and 4
+//List Currently : 1 --> 3 --> 4
+
+
+//By Insert operation 2 will be inserted at any node which is provided as the previous node, head node in this case
+//2 will be inserted after 
+//List Currently : 1 ---> 2 --> 3 --> 4
