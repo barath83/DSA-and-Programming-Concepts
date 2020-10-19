@@ -6,3 +6,4 @@
 + Can be traversed in both forward and backward direction.
 + The delete operation in Doubly Linked List is more efficient if pointer to node to be deleted is given
 + Insertion can be done quickly before a given node.
+
