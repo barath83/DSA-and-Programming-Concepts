@@ -9,5 +9,5 @@
 
 ## Drawbacks
 + We cannot access a element with a index value or random access, only sequential access or traversal is possible.
-+ We need to use a extra pointer variable to access successive nodes.
++ We need to use an extra pointer variable to access successive nodes which requires additional memory.
 + They do not have contiguous memory locations so not useful in cache friendly applications.
