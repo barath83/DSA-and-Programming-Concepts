@@ -93,7 +93,7 @@ int main()
 
     //Intializing nodes using append
     append(&head,3);
-    append(&head,4);
+    append(&head,4); 
 
     //Adding nodes using push at beginning
     push(&head,1);
