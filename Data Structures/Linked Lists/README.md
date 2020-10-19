@@ -7,3 +7,7 @@
 + Inserting a new element in an array costs a lot of time, but in linked lists if the position to be inserted is known the insertion operation can be done in O(1) time.
 + Ease of deletion and insertion.
 
+## Drawbacks
++ We cannot access a element with a index value or random access, only sequential access or traversal is possible.
++ We need to use a extra pointer variable to access successive nodes.
++ They do not have contiguous memory locations so not useful in cache friendly applications.
