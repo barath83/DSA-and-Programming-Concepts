@@ -11,8 +11,16 @@ class myClass {                 //classname is myClass which is userdefined foll
         void printWelcome(){
             cout<<"Hello "+studentName+", Welcome to class"<<endl;
         }
+        
+        //member function declared inside but defined out outside
+        void rollNoNotify();
+
 };  //class should be terminated by ;
 
+
+void myClass :: rollNoNotify(){
+    cout<<"Your Roll Number is "<<rollNo<<endl;
+}    
 
 int main()
 {
@@ -29,5 +37,6 @@ int main()
 
     //accessing member functions of the class
     classObj.printWelcome();
+    classObj.rollNoNotify();
 
 }
