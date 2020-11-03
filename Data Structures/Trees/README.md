@@ -1,10 +1,12 @@
 # Trees
 
 ## Why Trees?
+
 * Useful data structure for manipulating hierarchial data 
 * Linear access in arrays,linked list is not desirable in all cases.
-* Provides insertion/deletion in moderate time.
-* Runtime for most operations is around O(logN) and search operations are quicker according to the organization of the trees.
+* Provides insertion/deletion in moderate time(quicker than arrays,slower than LinkedLists).
+* Runtime for most operations is around O(logN)
+* Search operations are moderate according to the organization of the trees(slower than arrays,quicker than LinkedLists).
 * No fixed upper limit on number of nodes
 
 ## Trees 
