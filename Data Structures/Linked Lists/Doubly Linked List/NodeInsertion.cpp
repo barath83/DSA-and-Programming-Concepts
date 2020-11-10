@@ -22,7 +22,7 @@ void append(Node** headref,int newdata)
 
     //check if the head is NULL
     if(*headref == NULL){
-        newnode->next = NULL;
+        newnode->prev = NULL;
         *headref = newnode;
         return;
     }
